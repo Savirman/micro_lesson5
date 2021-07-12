@@ -6,7 +6,7 @@ metadata:
 spec:
   replicas: 1
   selector:
-    matchlabels:
+    matchLabels:
       app: redmine
   strategy:
     rollingUpdate:
@@ -19,7 +19,7 @@ spec:
         app: redmine
     spec:
       containers:
-        - image: redmine:4.1.1
+        - image: bitnami/redmine:4.1.1
           name: redmine
           ports:
           - containerPort: 3000
